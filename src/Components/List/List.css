@@ -1,0 +1,82 @@
+.List {
+  padding: 1% 10% 10% 10%;
+}
+
+input {
+  border-radius: 20;
+}
+
+.Title {
+  height: 3rem;
+  width: 30rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.Comment {
+  height: 2.5rem;
+  width: 40rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+.AddTask {
+  margin-left: 0.5rem;
+  height: 3%;
+  width: 3%;
+  -webkit-user-drag: none;
+}
+
+h2 {
+  color: #000004;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+h3 {
+  color: #000004;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+input[type="text"] {
+  background-color: #fbfef9;
+  color: #000004;
+  outline: none;
+}
+
+/* If the user is on a mobile device the contents are adjusted */
+@media (max-width: 1000px) {
+  .Title {
+    height: 2rem;
+    width: 90%;
+    font-size: 1rem;
+  }
+  .Comment {
+    height: 1.5rem;
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  .AddTask {
+    margin-left: 0rem;
+    padding-top: 1%;
+    height: 6%;
+    width: 6%;
+  }
+}
+
+/* Checks if the user has a preferred color scheme and adjust the css */
+@media (prefers-color-scheme: dark) {
+  .AddTask {
+    filter: invert();
+  }
+  input[type="text"] {
+    background-color: #00547a;
+    color: white;
+    outline: none;
+  }
+  ::placeholder {
+    color: #9bbfd4;
+  }
+}

@@ -1,0 +1,68 @@
+body,
+html,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #fbfef9;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  padding: 1rem;
+  background-color: #0c6291;
+  text-align: center;
+  margin: 0rem;
+  font-size: 1.88rem;
+  color: #fbfef9;
+}
+
+p {
+  color: #000004;
+  padding-left: 73%;
+}
+
+.App {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* If the user is on a mobile device the contents are adjusted */
+@media (max-width: 1000px) {
+  p {
+    font-size: 0.7rem;
+    padding-left: 2%;
+  }
+}
+
+/* Checks if the user has a preferred color scheme and adjust the css */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #003554;
+  }
+  h1 {
+    background-color: #051923;
+    color: rgb(255, 255, 255);
+  }
+  p {
+    color: white;
+  }
+  a {
+    color: #0582ca;
+  }
+}

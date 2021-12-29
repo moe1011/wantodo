@@ -1,0 +1,50 @@
+.Trash {
+  margin-left: 99%;
+  height: 3%;
+  width: 3%;
+  -webkit-user-drag: none;
+}
+
+.TaskCheck {
+  margin-left: -5%;
+  height: 3%;
+  width: 3%;
+  -webkit-user-drag: none;
+}
+
+/* If the user is on a mobile device the contents are adjusted */
+@media (max-width: 1000px) {
+  .Trash {
+    margin-left: 98%;
+    height: 6%;
+    width: 6%;
+  }
+  .TaskCheck {
+    margin-left: -10%;
+    height: 6%;
+    width: 6%;
+  }
+  .TaskTitle {
+    font-size: 1.7rem;
+    margin-bottom: 0%;
+  }
+  .TaskComment {
+    font-size: 1rem;
+  }
+}
+
+/* Checks if the user has a preferred color scheme and adjust the css */
+@media (prefers-color-scheme: dark) {
+  .TaskTitle {
+    color: white;
+  }
+  .TaskComment {
+    color: white;
+  }
+  .Trash {
+    filter: invert();
+  }
+  .TaskCheck {
+    filter: invert();
+  }
+}
