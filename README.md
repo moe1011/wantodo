@@ -11,7 +11,7 @@ This project is a simple to-do list created with react.
 
 - The webpage may render differently depending on:
     - The application is run on a mobile device.
-    - The application is run with a 'dark mode' prefernece on the users device.
+    - The application is run with a 'dark mode' preference on the users device.
 
 ##
 Author: Mohammed Abdulla
