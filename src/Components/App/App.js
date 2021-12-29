@@ -72,7 +72,7 @@ class App extends React.Component {
     try {
       let key = event.target.id;
 
-      const newList = this.state.list.filter((task) => task.id !== key);
+      const newList = this.state.list.filter((task) => task.id != key);
       this.setState({ list: newList }, () => {
         this.saveToStorage();
       });
@@ -92,10 +92,10 @@ class App extends React.Component {
     // Creates a copy of the tasks list
     let newList = this.state.list.filter((task) => task);
     // Grabs the tasks index location based on the tasks ID
-    let key = newList.findIndex((task) => task.id === event.target.id);
+    let key = newList.findIndex((task) => task.id == event.target.id);
 
     // Task is marked as complete and was previously incomplete
-    if (newList[key].isComplete !== true) {
+    if (newList[key].isComplete != true) {
       event.target.src = taskDone.src;
       newList[key].isComplete = true;
 
