@@ -68,7 +68,8 @@ export class List extends React.Component {
         ></input>
         <input
           className="AddTask"
-          type="image"
+          type="image" 
+          alt="AddTask"
           src={this.state.addIsClicked ? addTaskClicked : addTask}
           onMouseDown={this.addButtonEffect}
           onMouseUp={this.handleAdd}

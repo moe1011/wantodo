@@ -49,7 +49,6 @@ class App extends React.Component {
           task.push(taskObj[i]);
         }
       }
-
     } catch (e) {}
     console.log("Storage Received");
   }
@@ -73,7 +72,7 @@ class App extends React.Component {
     try {
       let key = event.target.id;
 
-      const newList = this.state.list.filter((task) => task.id != key);
+      const newList = this.state.list.filter((task) => task.id !== key);
       this.setState({ list: newList }, () => {
         this.saveToStorage();
       });
@@ -93,10 +92,10 @@ class App extends React.Component {
     // Creates a copy of the tasks list
     let newList = this.state.list.filter((task) => task);
     // Grabs the tasks index location based on the tasks ID
-    let key = newList.findIndex((task) => task.id == event.target.id);
+    let key = newList.findIndex((task) => task.id === event.target.id);
 
     // Task is marked as complete and was previously incomplete
-    if (newList[key].isComplete != true) {
+    if (newList[key].isComplete !== true) {
       event.target.src = taskDone.src;
       newList[key].isComplete = true;
 
@@ -122,17 +121,23 @@ class App extends React.Component {
           <a
             href="https://www.linkedin.com/in/mohammed-abdulla-b5281b19a/"
             target={"_blank"}
+            rel="noreferrer"
           >
             LinkedIn
           </a>
           {" - "}
-          <a href="https://github.com/moe1011" target={"_blank"}>
+          <a
+            href="https://github.com/moe1011"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             GitHub
           </a>
           {" - "}
           <a
             href="https://moe1011.github.io/moeasite/Home.html"
             target={"_blank"}
+            rel="noreferrer"
           >
             Portfolio
           </a>

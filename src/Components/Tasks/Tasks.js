@@ -36,13 +36,15 @@ export class Tasks extends React.Component {
                   className="TaskCheck"
                   id={task.id}
                   type="image"
-                  src={task.isComplete == true ? taskComplete : taskIncomplete}
+                  alt="TaskCheck"
+                  src={task.isComplete === true ? taskComplete : taskIncomplete}
                   onClick={this.handleCheck}
                 ></input>
                 <input
                   className="Trash"
                   id={task.id}
                   type="image"
+                  alt="Trash"
                   src={trashFilled}
                   onMouseDown={this.trashEffect}
                   onMouseUp={this.deleteTask}
