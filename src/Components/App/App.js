@@ -135,7 +135,7 @@ class App extends React.Component {
           </a>
           {" - "}
           <a
-            href="https://moe1011.github.io/moeasite/Home.html"
+            href="https://mohammedabdulla.netlify.app/"
             target={"_blank"}
             rel="noreferrer"
           >
@@ -154,5 +154,5 @@ class App extends React.Component {
     );
   }
 }
- 
+
 export default App;
