@@ -135,7 +135,7 @@ class App extends React.Component {
           </a>
           {" - "}
           <a
-            href="https://mohammedabdulla.netlify.app/"
+            href="https://moe1011.github.io/"
             target={"_blank"}
             rel="noreferrer"
           >
